@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipie } from '../recipie.module';
 
 @Component({
   selector: 'app-recipie-list',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipieListComponent implements OnInit {
 
-  recipies = [];
+  recipies: Recipie[] = [
+    new Recipie('Recipie','this is a test recipie','https://media.mykaramelli.com/galeria/recetas/receta-tarta-selva-negra_129_1.jpg'),
+    new Recipie('Recipie','this is another super test recipie','https://media.mykaramelli.com/galeria/recetas/receta-tarta-selva-negra_129_1.jpg')
+  ];
 
   constructor() { }
 
