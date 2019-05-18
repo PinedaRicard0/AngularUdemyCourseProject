@@ -6,9 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import { RecipiesComponent } from './recipies/recipies.component';
 import { RecipieListComponent } from './recipies/recipie-list/recipie-list.component';
 import { RecipieDetailComponent } from './recipies/recipie-detail/recipie-detail.component';
-import { RecipeItemComponent } from './recipies/recipie-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { RecipieItemComponent } from './recipies/recipie-list/recipie-item/recipie-item.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +17,9 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipiesComponent,
     RecipieListComponent,
     RecipieDetailComponent,
-    RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    RecipieItemComponent
   ],
   imports: [
     BrowserModule
