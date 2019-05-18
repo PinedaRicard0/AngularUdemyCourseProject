@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipieListComponent implements OnInit {
 
+  recipies = [];
+
   constructor() { }
 
   ngOnInit() {
