@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipiesComponent } from './recipies/recipies.component';
@@ -22,6 +22,7 @@ import { RecipieItemComponent } from './recipies/recipie-list/recipie-item/recip
     RecipieItemComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule
   ],
   providers: [],

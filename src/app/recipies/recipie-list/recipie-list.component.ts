@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Recipie } from '../recipie.module';
 
 @Component({
@@ -13,9 +13,15 @@ export class RecipieListComponent implements OnInit {
     new Recipie('Recipie','this is another super test recipie','https://media.mykaramelli.com/galeria/recetas/receta-tarta-selva-negra_129_1.jpg')
   ];
 
+  @Output('rlRecipie') selectedRecipie = new EventEmitter<Recipie>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onRecipieSelected(recipie :Recipie){
+    this.selectedRecipie.emit(recipie);
   }
 
 }
