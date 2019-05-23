@@ -9,6 +9,7 @@ import { RecipieDetailComponent } from './recipies/recipie-detail/recipie-detail
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipieItemComponent } from './recipies/recipie-list/recipie-item/recipie-item.component';
+import { DropdownDirective } from './directives/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RecipieItemComponent } from './recipies/recipie-list/recipie-item/recip
     RecipieDetailComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipieItemComponent
+    RecipieItemComponent,
+    DropdownDirective
   ],
   imports: [
     FormsModule,
