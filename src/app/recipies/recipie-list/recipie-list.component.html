@@ -7,8 +7,9 @@
 <div class="row">
     <div class="col-xs-12">
         <app-recipie-item  
-            *ngFor="let r of recipies"
-            [recipieItemSingleRecipie]="r">
+            *ngFor="let r of recipies; let i = index"
+            [recipieItemSingleRecipie]="r"
+            [index] = "i">
         </app-recipie-item>
     </div>
 </div>

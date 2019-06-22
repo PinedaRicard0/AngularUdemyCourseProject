@@ -5,15 +5,15 @@ import { Ingredient } from '../shared/ingredient.module';
 export class RecipeService{
 
     private recipies: Recipie[] = [
-        new Recipie('Recipie','this is a test recipie','https://media.mykaramelli.com/galeria/recetas/receta-tarta-selva-negra_129_1.jpg',
+        new Recipie('Cake','For a celebration','https://media.mykaramelli.com/galeria/recetas/receta-tarta-selva-negra_129_1.jpg',
         [
-            new Ingredient('Meat', 1),
-            new Ingredient('French fries', 20)
+            new Ingredient('Cream', 1),
+            new Ingredient('Flour', 20)
         ]),
-        new Recipie('Recipie','this is another super test recipie','https://media.mykaramelli.com/galeria/recetas/receta-tarta-selva-negra_129_1.jpg',
+        new Recipie('Hot dog','For a quick dinner','https://rapidbrandsinc.com/wp-content/uploads/2017/05/Screenshot.png',
         [
-            new Ingredient('Buns', 2),
-            new Ingredient('Meat', 1)
+            new Ingredient('Bread', 2),
+            new Ingredient('Sauce', 1)
         ])
       ];
     
@@ -21,5 +21,10 @@ export class RecipeService{
 
       getRecipes(){
           return this.recipies.slice();
+      }
+
+      getRecipeByIndex(index:number): Recipie
+      {
+          return this.recipies.slice()[index];
       }
 }
