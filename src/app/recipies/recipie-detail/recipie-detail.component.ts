@@ -12,6 +12,7 @@ import { RecipeService } from '../recipies.service';
 export class RecipieDetailComponent implements OnInit {
 
   @Input('rdRecipie') recipie:Recipie;
+  id : number;
 
   constructor(private recipeService:RecipeService,private shoppinglistService: ShoppingListService, private activatedRoute: ActivatedRoute) { }
 
@@ -20,6 +21,7 @@ export class RecipieDetailComponent implements OnInit {
     .subscribe(
       (params:Params) => {
         this.recipie = this.recipeService.getRecipeByIndex(Number(params['id']));
+        this.id = Number(params['id']);
       }
     );
   }
