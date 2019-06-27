@@ -1,5 +1,4 @@
 import { Recipie } from './recipie.module';
-import { EventEmitter } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.module';
 
 export class RecipeService{
@@ -16,8 +15,6 @@ export class RecipeService{
             new Ingredient('Sauce', 1)
         ])
       ];
-    
-      recipeSelected = new EventEmitter<Recipie>();
 
       getRecipes(){
           return this.recipies.slice();
