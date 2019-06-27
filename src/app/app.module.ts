@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -34,7 +34,7 @@ import { RecipeEditComponent } from './recipies/recipe-edit/recipe-edit.componen
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ShoppingListService],
+  providers: [ShoppingListService, Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
